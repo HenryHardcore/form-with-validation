@@ -1,0 +1,81 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(73, 73, 185);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.papir {
+  background-color: wheat;
+  height: 600px;
+  width: 500px;
+  border-radius: 30px;
+  
+}
+form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.segment {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+.segment input[type="text"], .segment input[type="date"], .segment input[type="email"], .segment input[type="password"] {
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  height: 30%;
+  padding-left: 10px;
+  flex: 1;
+  border-bottom: 1px solid rgb(10, 10, 117);
+  background-color: wheat;
+  font-size: 18px;
+}
+button {
+  height: 50px;
+  width: 150px;
+  margin: 20px;
+  background-color: rgb(219, 191, 143);
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  transition: 0.2s;
+}
+button:hover{
+  font-size: 18px;
+  background-color: rgb(202, 180, 139);
+}
+button:active {
+  background-color: rgb(219, 191, 143);
+  font-size: 16px;
+}
+h3 {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+.voce {
+  width: 100%;
+
+}
+.povrce {
+  justify-content: center;
+}
+.voce label {
+  margin: 0 18px;
+}
+span {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 110px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form with validation</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./form.css">
+  </head>
+  <body>
+    <div class="papir">
+      <form>
+        <div class="segment">
+          <label style="font-size: 20px;" for="first-name">First Name:  
+          </label>
+          <input type="text" id="first-name" required pattern="[A-Za-z]{2,}">
+          <span class="error-FN"></span>
+        </div>
+        <div class="segment">
+          <label for="last-name" style="font-size: 20px;">Last Name:  
+          </label>
+          <input type="text" id="last-name" required pattern="[A-Za-z]{2,}">
+          <span class="error-LN"></span>
+        </div>
+        <div class="segment">
+          <label for="birth-date" style="font-size: 20px;">Birth Date:  
+          </label>
+          <input type="date" required id="birth-date">
+          <span class="error-date"></span>
+        </div>
+        <div class="segment">
+          <label for="first-name" style="font-size: 20px;">Male
+          </label>
+          <input type="radio" required name="gender">
+          <label for="first-name" style="font-size: 20px; margin-left: 20px;">Female 
+          </label>
+          <input type="radio" required name="gender">
+          <label for="first-name" style="font-size: 20px; margin-left: 20px;">Prefer not to say
+          </label>
+          <input type="radio" required name="gender">
+        </div>
+        <div class="segment">
+          <label for="first-name" style="font-size: 20px;">Email:  
+          </label>
+          <input type="email" required>
+        </div>
+        <div class="segment">
+          <label for="first-name" style="font-size: 20px;">Password:<input type="password" required>  
+          </label>
+          <label for="first-name" style="font-size: 20px;">Repeat Password:<input type="password" required>  
+          </label>
+        </div>
+        <div class="segment povrce">
+          <h3>What fruits do you like?</h3>
+          <div class="voce">
+          <label><input type="checkbox" >Banana</label>
+          <label><input type="checkbox" >Apple</label>
+          <label><input type="checkbox" >Brocoli  </label>
+          <label><input type="checkbox" >Orange</label>        
+          <label><input type="checkbox" >Strawberry</label>  
+          <label><input type="checkbox" >Blueberry</label>  
+          <label><input type="checkbox" >Grape</label>
+          <label><input type="checkbox" >All</label>
+          </div>
+        </div>
+        <div class="segment" style="display: flex; justify-content: center;">
+          <button>Submit</button>
+        </div>
+        
+      </form>
+    </div>
+    <script src="./form.js"></script>
+  </body>
+</html>
