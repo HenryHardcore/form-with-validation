@@ -7,62 +7,65 @@
   </head>
   <body>
     <div class="papir">
-      <form>
+      <form id="form">
         <div class="segment">
           <label style="font-size: 20px;" for="first-name">First Name:  
           </label>
-          <input type="text" id="first-name" required pattern="[A-Za-z]{2,}">
+          <input type="text" id="first-name"  pattern="[A-Za-z]{2,}">
           <span class="error-FN"></span>
         </div>
         <div class="segment">
           <label for="last-name" style="font-size: 20px;">Last Name:  
           </label>
-          <input type="text" id="last-name" required pattern="[A-Za-z]{2,}">
+          <input type="text" id="last-name"  pattern="[A-Za-z]{2,}">
           <span class="error-LN"></span>
         </div>
         <div class="segment">
           <label for="birth-date" style="font-size: 20px;">Birth Date:  
           </label>
-          <input type="date" required id="birth-date">
+          <input type="date"  id="birth-date">
           <span class="error-date"></span>
         </div>
         <div class="segment">
-          <label for="first-name" style="font-size: 20px;">Male
+          <label for="first-name" style="font-size: 20px;" >Male
           </label>
-          <input type="radio" required name="gender">
+          <input type="radio"  name="gender" value="male">
           <label for="first-name" style="font-size: 20px; margin-left: 20px;">Female 
           </label>
-          <input type="radio" required name="gender">
+          <input type="radio"  name="gender" value="female">
           <label for="first-name" style="font-size: 20px; margin-left: 20px;">Prefer not to say
           </label>
-          <input type="radio" required name="gender">
+          <input type="radio"  name="gender" value="rrefer-not-to-say">
+        </div>
+        <div class="segment" >
+          <label for="email" style="font-size: 20px;">Email:  
+          </label>
+          <input type="email"  id="email">
+          <span class="error-email"></span>
         </div>
         <div class="segment">
-          <label for="first-name" style="font-size: 20px;">Email:  
+          <label for="password" style="font-size: 20px;">Password:<input type="password"  id="password">  
           </label>
-          <input type="email" required>
+          <span class="error-password" style="margin-top: 0px; margin-left: 93px;"></span>
+          <label for="Cpassword" style="font-size: 20px; margin-top: 30px;">Confirm Password:<input type="password"  id="Cpassword">  
+          </label>
+          <span class="error-Cpassword" style="margin-top: 105px; margin-left: 165px;"></span>
         </div>
-        <div class="segment">
-          <label for="first-name" style="font-size: 20px;">Password:<input type="password" required>  
-          </label>
-          <label for="first-name" style="font-size: 20px;">Repeat Password:<input type="password" required>  
-          </label>
-        </div>
-        <div class="segment povrce">
+        <div class="segment povrce" style="margin-top: 20px;">
           <h3>What fruits do you like?</h3>
           <div class="voce">
-          <label><input type="checkbox" >Banana</label>
-          <label><input type="checkbox" >Apple</label>
-          <label><input type="checkbox" >Brocoli  </label>
-          <label><input type="checkbox" >Orange</label>        
-          <label><input type="checkbox" >Strawberry</label>  
-          <label><input type="checkbox" >Blueberry</label>  
-          <label><input type="checkbox" >Grape</label>
-          <label><input type="checkbox" >All</label>
+          <label><input type="checkbox" class="fruit" value="banana">Banana</label>
+          <label><input type="checkbox" class="fruit" value="apple">Apple</label>
+          <label><input type="checkbox" class="fruit" value="brocoli">Brocoli  </label>
+          <label><input type="checkbox" class="fruit" value="orange">Orange</label>        
+          <label><input type="checkbox" class="fruit" value="strawberry">Strawberry</label>  
+          <label><input type="checkbox" class="fruit" value="blueberry">Blueberry</label>  
+          <label><input type="checkbox" class="fruit" value="grape">Grape</label>
+          <label><input type="checkbox" class="fruit" id="all" value="all">All</label>
           </div>
         </div>
         <div class="segment" style="display: flex; justify-content: center;">
-          <button>Submit</button>
+          <button id="submitBtn">Submit</button>
         </div>
         
       </form>
